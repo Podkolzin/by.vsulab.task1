@@ -6,6 +6,10 @@ public abstract class Vegetable {
     private double calorieContent;
     private double weight;
 
+    public Vegetable(String name) {
+        this.name = name;
+    }
+
     public Vegetable(String name, double calorieContent) {
         if (calorieContent > 0) {
             this.name = name;
