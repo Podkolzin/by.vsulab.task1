@@ -5,7 +5,7 @@ public class Eggplant extends Nightshade {
         super("Баклажан", 25.0);
     }
 
-    public Eggplant(String name, double weight) {
+    public Eggplant(double weight) {
         super("Баклажан", 25.0);
     }
 

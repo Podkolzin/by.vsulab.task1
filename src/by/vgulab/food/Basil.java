@@ -6,7 +6,7 @@ public class Basil extends Spicy {
         super("Базилик", 5.0);
     }
 
-    public Basil(String name, double weight) {
+    public Basil(double weight) {
         super("Базилик", 5.0);
     }
 

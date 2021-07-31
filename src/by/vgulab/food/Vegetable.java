@@ -60,10 +60,6 @@ public abstract class Vegetable {
 
     @Override
     public String toString() {
-        return "Vegetable{" +
-                "name='" + name + '\'' +
-                ", calorieContent=" + calorieContent +
-                ", weight=" + weight +
-                '}';
+        return (weight + " в граммах " + name + " " + getTotalCalories() + " каллорий");
     }
 }

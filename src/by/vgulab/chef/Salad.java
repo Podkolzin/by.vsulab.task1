@@ -10,7 +10,7 @@ public class Salad {
     private String name;
     private List<Vegetable> ingredient = new ArrayList<Vegetable>();
 
-    public Salad(String name) {
+    public Salad() {
         this.name = name;
     }
 
@@ -31,16 +31,19 @@ public class Salad {
     }
 
     public void showIngredient() {
-        if (!ingredient.isEmpty()) {
-            System.out.println("В салате " + name + " есть");
-            for (Vegetable vegetable : ingredient) {
-                System.out.println(ingredient.toString());
-                System.out.println("********************");
-            }
-        } else {
+        if (ingredient.isEmpty()) {
             System.out.println("Вы еще ничего не добавили");
+
             return;
         }
+
+        System.out.println("В салате " + name + " есть: ");
+        for (Vegetable vegetable : ingredient) {
+            System.out.println(vegetable.toString());
+        }
+        System.out.println("----------------------------");
+        System.out.println("Общая энергия равна: " + caloriecount() + "kcal");
+        System.out.println("\n");
     }
 
     public double caloriecount() {
@@ -69,5 +72,4 @@ public class Salad {
             }
         }
     }
-
 }

@@ -6,7 +6,7 @@ public class Tomate extends Nightshade {
         super("Томат", 18.0);
     }
 
-    public Tomate(String name, double weight) {
+    public Tomate(double weight) {
         super("Томат", 18.0);
     }
 

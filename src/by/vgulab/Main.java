@@ -1,18 +1,48 @@
 package by.vgulab;
 
-import by.vgulab.food.Carrot;
-import by.vgulab.food.Vegetable;
-
-import java.util.ArrayList;
+import by.vgulab.chef.Rustic;
+import by.vgulab.chef.Vinaigrette;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("test");
-        Carrot carrot = new Carrot(0);
-        System.out.println(carrot.toString());
-        ArrayList <Vegetable> test = new ArrayList<>();
-        test.add(carrot);
-        carrot.getCalorieContent();
+//        System.out.println("test");
+//        Carrot carrot = new Carrot(0);
+//        System.out.println(carrot.toString());
+//        ArrayList <Vegetable> test = new ArrayList<>();
+//        test.add(carrot);
+//        carrot.getCalorieContent();
+//
+//        Salad salad = new Salad();
+//        salad.addIngredient(new Pepper());
+
+//        ChefСreator chef = new ChefСreator();
+//
+//        chef.showOptions();
+
+
+        // создание обьектов салатов
+        Vinaigrette vinaigrette = new Vinaigrette();
+        Rustic rustic = new Rustic();
+
+
+        // вывоз ингредиентов
+        vinaigrette.showIngredient();
+        rustic.showIngredient();
+
+
+        // сортировка по калорийности ингредиентов
+        vinaigrette.sortIngredientByCalories();
+        rustic.sortIngredientByCalories();
+        vinaigrette.showIngredient();
+        rustic.showIngredient();
+
+        // сортировка по весу ингредиентов
+        vinaigrette.sortIngredientByWeight();
+        rustic.sortIngredientByWeight();
+        vinaigrette.showIngredient();
+        rustic.showIngredient();
+
+
     }
 }
 

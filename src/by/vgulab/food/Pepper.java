@@ -5,7 +5,7 @@ public class Pepper extends Nightshade {
         super("Болгарский перец", 20.0);
     }
 
-    public Pepper(String name, double weight) {
+    public Pepper(double weight) {
         super("Болгарский перец", 20.0);
     }
 

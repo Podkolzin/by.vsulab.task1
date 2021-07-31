@@ -6,7 +6,7 @@ public class Cauliflower extends Cabbage {
     }
 
 
-    public Cauliflower(String name, double weight) {
+    public Cauliflower(double weight) {
         super("Цветная капуста", 28.0);
     }
 
