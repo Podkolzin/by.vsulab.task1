@@ -42,6 +42,10 @@ public class Main {
         vinaigrette.showIngredient();
         rustic.showIngredient();
 
+        // Найти овощи в салате, соответствующие заданному диапазону калорийности.
+        vinaigrette.rangeCalories(20.0, 40.0);
+        rustic.rangeCalories(7.0, 35.0);
+
 
     }
 }

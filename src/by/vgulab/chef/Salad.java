@@ -67,9 +67,10 @@ public class Salad {
         System.out.println("Вот список ингредиентов в заданном диапазоне ");
         for (Vegetable vegetable : ingredient) {
             count = vegetable.getCalorieContent();
-            if (count <= lower && count >= upper) {
-                System.out.println(vegetable.getName() + vegetable.getCalorieContent());
+            if (count >= lower && count <= upper) {
+                System.out.println(vegetable.getName() + " " + vegetable.getCalorieContent());
             }
         }
+        System.out.println("----------------------------");
     }
 }
